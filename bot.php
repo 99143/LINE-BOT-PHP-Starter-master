@@ -1,6 +1,6 @@
 <?php
 $proxy = 'http://fixie:CCbrkV9qQVdAMuy@velodrome.usefixie.com:80';
-$proxyauth = 'username:password';
+$proxyauth = 'fixie:CCbrkV9qQVdAMuy';
 $access_token = 'AISYz0a6PRgbuW9MdaTOuhrM6UmQFcJu+BCr+8YtFL+toxtNmT3X2n25LYqVMBVhlLSIx45sZRlXDVnTfJ7Kk53Dvojdgf1IX5NNJAmkmEOcsc7+hfMvYyeRE5lTIwjo0P3sRMfn3tygW6xvVt6U3AdB04t89/1O/w1cDnyilFU=';
 
 // Get POST body content
