@@ -50,28 +50,28 @@ if (!is_null($events['events'])) {
 			echo $result . "\r\n";
 			
 			// Make a POST Request to Messaging API to reply to sender
-			$url = 'https://api.line.me/v2/bot/message/reply';
-			$data = [
+			$url1 = 'https://api.line.me/v2/bot/message/push';
+			$data1 = [
 				'replyToken' => $replyToken,
 				'messages' => [$messages],
 			];
-			$post = json_encode($data);
-			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
+			$post1 = json_encode($data);
+			$headers1 = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
 
-			$ch = curl_init($url);
-			curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
-			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-			curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
-			curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-			curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+			$ch1 = curl_init($url);
+			curl_setopt($ch1, CURLOPT_CUSTOMREQUEST, "POST");
+			curl_setopt($ch1, CURLOPT_RETURNTRANSFER, true);
+			curl_setopt($ch1, CURLOPT_POSTFIELDS, $post1);
+			curl_setopt($ch1, CURLOPT_HTTPHEADER, $headers1);
+			curl_setopt($ch1, CURLOPT_FOLLOWLOCATION, 1);
 			
-			curl_setopt($ch, CURLOPT_PROXY, $proxy);
-			curl_setopt($ch, CURLOPT_PROXYUSERPWD, $proxyauth);
+			curl_setopt($ch1, CURLOPT_PROXY, $proxy);
+			curl_setopt($ch1, CURLOPT_PROXYUSERPWD, $proxyauth);
 			
-			$result = curl_exec($ch);
-			curl_close($ch);
+			$result1 = curl_exec($ch1);
+			curl_close($ch1);
 
-			echo $result . "\r\n";
+			echo $result1 . "\r\n";
 		}
 	}
 }
