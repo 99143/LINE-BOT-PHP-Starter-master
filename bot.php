@@ -22,7 +22,8 @@ if (!is_null($events['events'])) {
 			$messages = [
 			//	{
 				'type' => 'text',
-				'text' => $text "test"
+				'text' => $text
+				'text' => "test"
 			//	},
 			//	{
            		//	"type":"text",
