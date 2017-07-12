@@ -20,16 +20,19 @@ if (!is_null($events['events'])) {
 			$userId = $event['source']['userId'];
 			$id = $event['message']['id'];
 			// Build message to reply back
+			$messages = [
+					 'type' => 'text',
+					 'text' => "0123456789";
+					 ]; 			
+			/*
 			switch( $text ) {
 				case 'number' : $messages = [
 					 'type' => 'text',
-					 'text' => "0123456789"; break;
+					 'text' => "0123456789";
 					 ]; 				
 				default : 'type' => 'text',
 					  'text' => $text; break;
 			}
-			/*
-			
 			*/
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
