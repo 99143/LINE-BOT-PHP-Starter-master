@@ -21,7 +21,7 @@ if (!is_null($events['events'])) {
 			$id = $event['message']['id'];
 			// Build message to reply back
 			switch( $text ) {
-				case "number" : $messages = [
+				case 'number' : $messages = [
 					 'type' => 'text',
 					 'text' => "0123456789"; break;
 					 ]; 				
