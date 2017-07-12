@@ -24,16 +24,7 @@ if (!is_null($events['events'])) {
 				    'type' => 'text',
 				    'text' => $text;
 			]; 			
-			/*
-			switch( $text ) {
-				case 'number' : $messages = [
-					 'type' => 'text',
-					 'text' => "0123456789";
-					 ]; 				
-				default : 'type' => 'text',
-					  'text' => $text; break;
-			}
-			*/
+			
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
