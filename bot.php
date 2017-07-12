@@ -22,7 +22,7 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 					 'type' => 'text',
-					 'text' => "0123456789";
+					 'text' => $text;
 					 ]; 			
 			/*
 			switch( $text ) {
