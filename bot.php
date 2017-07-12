@@ -21,9 +21,9 @@ if (!is_null($events['events'])) {
 			$id = $event['message']['id'];
 			// Build message to reply back
 			$messages = [
-					 'type' => 'text',
-					 'text' => $text;
-					 ]; 			
+				    'type' => 'text',
+				    'text' => $text;
+			]; 			
 			/*
 			switch( $text ) {
 				case 'number' : $messages = [
